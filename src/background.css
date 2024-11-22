@@ -1,0 +1,76 @@
+.background {
+    height: 100vh; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #E0D2FF, #E69495, #F69090);
+    position: relative;
+    overflow: hidden; 
+}
+
+
+.wave-bg-top-right{
+    position: absolute;
+    top: 0; /* Posisikan ke atas */
+    right: 0; /* Posisikan ke kanan */
+    margin: -10px;
+}
+
+
+.wave-bg-bottom-left{
+    position: absolute;
+    bottom: 0; /* Posisikan ke atas */
+    left: 0; /* Posisikan ke kanan */
+    margin: -10px;
+}
+
+
+.svg-left-top {
+    position: absolute;
+    top: 0; /* Posisikan ke atas */
+    left: 0; /* Posisikan ke kanan */
+    margin: -100px; /* Tambahkan margin agar tidak terlalu menempel */
+}
+
+.svg-bottom-right{
+    position: absolute;
+    bottom: 0; /* Posisikan ke bawah */
+    right: 0; /* Posisikan ke kanan */
+    margin: -130px; /* Tambahkan margin agar tidak terlalu menempel */
+}
+
+
+.svg-to-animate {
+    opacity: 0; /* Awalnya tidak terlihat */
+    transform: scale(0.8); /* Awalnya lebih kecil */
+    transition: all 0.5s ease-out; /* Transisi animasi */
+}
+
+.mulai-survey {
+    position: absolute;
+    top: 20px; /* Jarak dari atas */
+    left: 50%; /* Posisikan di tengah horizontal */
+    transform: translateX(-50%); /* Koreksi agar benar-benar di tengah */
+    margin: 0;
+  }
+  
+
+  .svg-to-animate.animate {
+    opacity: 1; /* Muncul */
+    transform: scale(1); /* Kembali ke ukuran normal */
+    transition: all 0.5s ease-out;
+    transition-delay: 0.3s; /* Tambahkan sedikit delay */
+  }
+  
+
+body, html {
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+    overflow: hidden; /* Mencegah scroll */
+    width: 100%; /* Pastikan elemen mencakup seluruh lebar viewport */
+    height: 100%; /* Pastikan elemen mencakup seluruh tinggi viewport */
+}
+
+  
