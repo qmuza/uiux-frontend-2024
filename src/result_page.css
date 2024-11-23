@@ -1,0 +1,158 @@
+/* General Layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Anek Kannada', sans-serif;
+}
+
+body {
+  background: url('Group\ 16.svg') no-repeat top center,url('Group\ 32.svg')no-repeat top left ,url('Group\ 33.svg')no-repeat bottom right,linear-gradient(180deg, #FFE1FF 0%, #FF9696 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  flex-direction: column;
+  margin: 0;
+}
+.bottom-svg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0; /* Posisi di bawah */
+  left: 0;   /* Ratakan ke kiri */
+  background: url('Bulet\ bulet.svg') no-repeat center bottom;
+  background-size: cover; /* Atur ukuran sesuai kebutuhan */
+  z-index: -2; /* Di bawah elemen lain */
+}
+
+.rectangle {
+position: absolute;
+width: 100%;
+height: 260px;
+left: 0; /* Posisi kiri */
+bottom: 0; /* Posisi bawah halaman */
+background: linear-gradient(180deg, rgba(255, 225, 255, 0) 0%, #FFE1FF 100%);
+z-index: -1; /* Menempatkan di belakang konten utama */
+}
+
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  /* background-color: white; */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Title Styling */
+.title {
+  position: absolute;
+  /* width: 100%; */
+  font-size:6px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #FF9696;
+  margin-bottom: 20px;
+  font-family: 'Product Sans', sans-serif;
+  text-shadow: 0px 0px 9.84157px #FFE1FF;
+}
+
+/* Score Box */
+.score-box {
+  background: linear-gradient(101.88deg, rgba(180, 154, 238, 0.5) 7.76%, rgba(251, 152, 153, 0.5) 94.43%);
+  border-radius:35px;
+  padding: 20px;
+
+  box-shadow: inset -3px -1px 8.4px rgba(255, 255, 255, 0.5), inset 4px 4px 5.8px rgba(255, 255, 255, 0.5);
+  margin-bottom: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Atur lebar kotak skor agar responsif */
+  max-width: 800px;  /*Batas maksimal lebar kotak skor */
+}
+
+.score-box p {
+  /* position: absolute; */
+  font-family: 'Anek Kannada', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #433878;
+
+}
+
+.score-box h2 {
+  font-family: 'Anek Kannada', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #433878;
+  text-align: center;
+}
+
+/* Table */
+.table {
+  font-size: 1.2em;
+  /* margin-top: 20px; */
+  margin: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%; /* Atur lebar tabel agar responsif */
+  max-width: 600px; /* Batasi lebar maksimal tabel */
+  text-align: center;
+  margin-left: 0;
+  
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #000;
+  text-align: center; 
+}
+
+.row:nth-child(1) {
+  background: #CDC1FF;
+}
+
+.row:nth-child(2) {
+  background: #B9A3E6;
+}
+
+.row:nth-child(3) {
+  background: #A58AD7;
+}
+
+.row:nth-child(4) {
+  background: #7E60BF;
+}
+
+.row:nth-child(5) {
+  background: #5C4E91;
+}
+
+.row.active {
+  color: #fff
+}
+
+.row span:first-child {
+  border-radius: 15px 15px 0 0;
+  text-align: left;
+}
+
+.row span:last-child {
+  border-radius: 0 0 15px 15px;
+  text-align: left;
+}
+
