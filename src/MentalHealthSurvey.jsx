@@ -49,6 +49,10 @@ const MentalHealthSurvey = () => {
       <button id="submit-btn" onClick={handleSubmit}>
         Submit
       </button>
+      <br></br>
+      <br></br>
+      <br></br>
+      {/*semua line break buat ngasih space progress bar*/}
     </div>
   );
 };

@@ -36,11 +36,7 @@
 .progress-wrapper {
     z-index: 99;
     display: flex;
-    position: fixed;
-    width: 90%;
+    position: sticky;
     justify-content: center;
-    height: 60px;
     top: 90vh;
-    left: 50%;
-    margin-left: -45%;
 }
