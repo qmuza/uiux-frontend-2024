@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import questions from './questions.json';
 import "./MentalHealthSurvey.css";
+import ProgressBar from "./ProgressBar"
 
 const MentalHealthSurvey = () => {
   const [scores, setScores] = useState({});
@@ -18,6 +19,7 @@ const MentalHealthSurvey = () => {
 
   return (
     <div className="survey-container">
+      <ProgressBar prog_percent={0} />
       <h1>Mental Health Survey</h1>
       {questions.map((question, index) => (
         <div key={question.id} className="question-container">

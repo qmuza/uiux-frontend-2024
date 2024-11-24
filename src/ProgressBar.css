@@ -1,0 +1,46 @@
+.main-progress-body {
+    display: flex;
+    width: 90%;
+    background-color: #FFE1FF;
+    height: 60px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-progress-bg {
+    display: flex;
+    background-image: linear-gradient(to right, #EECBE5 , #FFF7D1);
+    width: calc(100% - 10px);
+    height: 50px;
+    border-radius: 25px;
+    justify-content: start;
+
+}
+
+.progress-bar-real {
+    display: flex;
+    background-color: #A483CC;
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.progress-text {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.progress-wrapper {
+    z-index: 99;
+    display: flex;
+    position: fixed;
+    width: 90%;
+    justify-content: center;
+    height: 60px;
+    top: 90vh;
+    left: 50%;
+    margin-left: -45%;
+}
