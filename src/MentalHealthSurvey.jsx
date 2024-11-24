@@ -6,6 +6,7 @@ import ProgressBar from "./ProgressBar"
 
 const MentalHealthSurvey = () => {
   const [scores, setScores] = useState({});
+  const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
 
   const handleOptionChange = (questionId, value) => {
@@ -13,13 +14,17 @@ const MentalHealthSurvey = () => {
   };
 
  const handleSubmit = () => {
-  const totalScore = Object.values(scores).reduce((acc, val) => acc + Number(val), 0);
-  navigate('/result', { state: { score: totalScore } });
+  if (Object.keys(scores).length < 9) { //ada 9 pertanyaan
+    setErrorMessage("Semua pertanyaan wajib diisi sebelum anda submit");
+  } else {
+    const totalScore = Object.values(scores).reduce((acc, val) => acc + Number(val), 0);
+    navigate('/result', { state: { score: totalScore } });
+  };
 };
 
   return (
     <div className="survey-container">
-      <ProgressBar prog_percent={0} />
+      <ProgressBar prog_percent={Math.round(100*Object.keys(scores).length/9)} />
       <h1>Mental Health Survey</h1>
       {questions.map((question, index) => (
         <div key={question.id} className="question-container">
@@ -40,6 +45,7 @@ const MentalHealthSurvey = () => {
           </div>
         </div>
       ))}
+      <h3>{errorMessage}</h3>
       <button id="submit-btn" onClick={handleSubmit}>
         Submit
       </button>

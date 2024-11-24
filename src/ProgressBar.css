@@ -25,7 +25,7 @@
     border-radius: 25px;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    transition: width 1s;
 }
 
 .progress-text {
