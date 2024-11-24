@@ -18,12 +18,12 @@ function LandingPage() {
 
   return (
     <div className="background">
-      <img className="wave-bg-bottom-left" src="/SVG/WaveBackground.svg" alt="WaveBg" />
-      <img className="wave-bg-top-right" height={1000} src="/SVG/WaveBackground2.svg" alt="WaveBg2" />
-      <img className="svg-left-top" height={500} src="/SVG/buletbulet.svg" alt="SvgBuletBulet" />
-      <img className="svg-bottom-right" height={450} src="SVG/buletbulet2.svg" alt="SvgBuletBulet2" />
-      <img className="mulai-survey" height={300} src="SVG/tulisanmulaisurvey.svg" alt="MulaiSurvey" />
-      <div className="button-container">
+      <img style={{zIndex: 0}} className="wave-bg-bottom-left" src="/SVG/WaveBackground.svg" alt="WaveBg" />
+      <img style={{zIndex: 0}} className="wave-bg-top-right" height={1000} src="/SVG/WaveBackground2.svg" alt="WaveBg2" />
+      <img style={{zIndex: 0}} className="svg-left-top" height={500} src="/SVG/buletbulet.svg" alt="SvgBuletBulet" />
+      <img style={{zIndex: 0}} className="svg-bottom-right" height={450} src="SVG/buletbulet2.svg" alt="SvgBuletBulet2" />
+      <img style={{zIndex: 0}} className="mulai-survey" height={300} src="SVG/tulisanmulaisurvey.svg" alt="MulaiSurvey" />
+      <div style={{zIndex: 777} /*lol berapapun bisa asal lebih tinggi dari img nya*/} className="button-container">
         <button className="custom-button" onClick={handleStart}>
           Mulai
         </button>
