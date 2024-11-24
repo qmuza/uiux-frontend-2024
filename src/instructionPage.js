@@ -1,5 +1,6 @@
 import React from 'react';
 import './instructionPage.css';
+import { useNavigate } from 'react-router-dom';
 
 const ChevronDown = () => (
   <svg 
@@ -19,6 +20,8 @@ const ChevronDown = () => (
 );
 
 const InstructionPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="instruction-container">
       <div className="instruction-wrapper">
@@ -41,8 +44,10 @@ const InstructionPage = () => {
             </div>
 
             <div className="scroll-prompt">
-              <p>Gulir ke bawah untuk memulai</p>
-              <ChevronDown />
+              <p>Klik panah di bawah untuk memulai</p>
+              <button className="down-button" onClick={() => navigate('/survey')}>
+                <ChevronDown />
+              </button>
             </div>
           </div>
         </div>
