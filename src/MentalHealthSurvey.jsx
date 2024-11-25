@@ -29,6 +29,7 @@ const MentalHealthSurvey = () => {
       {questions.map((question, index) => (
         <div key={question.id} className="question-container">
           <p className="question">{`${index + 1}. ${question.question}`}</p>
+          <br></br>
           <div className="option-container">
             {question.options.map((option, optIndex) => (
               <label key={optIndex} className="option">
