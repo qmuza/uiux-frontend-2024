@@ -39,7 +39,7 @@ const MentalHealthSurvey = () => {
                   value={option.value}
                   onChange={() => handleOptionChange(question.id, option.value)}
                 />
-                <span className={`circle ${['a', 'b', 'c', 'd'][optIndex]}`} />
+                <span className={`circle ${['d', 'c', 'b', 'a'][optIndex]}`} />
                 <span>{option.text}</span>
               </label>
             ))}
