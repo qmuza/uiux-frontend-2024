@@ -162,3 +162,9 @@ z-index: -1; /* Menempatkan di belakang konten utama */
   text-align: left;
 }
 
+@media (max-width: 640px) {
+  .result-wrapper {
+    background: url('Group\ 16.svg') no-repeat 1000% 0%;
+  }
+}
+
