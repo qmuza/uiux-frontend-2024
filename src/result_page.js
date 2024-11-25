@@ -32,41 +32,42 @@ function ResultPage() {
   };
 
   return (
-    <div>
-      <div className="rectangle"></div>
+    <div className='outer-wrapper'>
+      <div className='result-wrapper'>
+        <div className="rectangle"></div>
 
-      <div className="container">
-        <h1 className="title">Hasil Survey</h1>
+        <div className="container">
 
-        <div className="score-box">
-          <p>Skor anda:</p>
-          <h2 id="scoreValue">{score}</h2>
-        </div>
-
-        <div className="table">
-          <div className="row" id="score1">
-            <span>0-4:</span>
-            <span>No depression</span>
+          <div className="score-box">
+            <p>Skor anda:</p>
+            <h2 id="scoreValue">{score}</h2>
           </div>
 
-          <div className="row" id="score2">
-            <span>5-9:</span>
-            <span>Mild depression</span>
-          </div>
+          <div className="table">
+            <div className="row" id="score1">
+              <span>0-4:</span>
+              <span>No depression</span>
+            </div>
 
-          <div className="row" id="score3">
-            <span>10-14:</span>
-            <span>Moderate depression</span>
-          </div>
+            <div className="row" id="score2">
+              <span>5-9:</span>
+              <span>Mild depression</span>
+            </div>
 
-          <div className="row" id="score4">
-            <span>15-19:</span>
-            <span>Moderately severe depression</span>
-          </div>
+            <div className="row" id="score3">
+              <span>10-14:</span>
+              <span>Moderate depression</span>
+            </div>
 
-          <div className="row" id="score5">
-            <span>20-27:</span>
-            <span>Severe depression</span>
+            <div className="row" id="score4">
+              <span>15-19:</span>
+              <span>Moderately severe depression</span>
+            </div>
+
+            <div className="row" id="score5">
+              <span>20-27:</span>
+              <span>Severe depression</span>
+            </div>
           </div>
         </div>
       </div>

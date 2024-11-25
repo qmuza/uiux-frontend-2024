@@ -95,7 +95,7 @@ body, html {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.4); /* Shadow lebih halus */
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-left: -5%;
+    margin-left: -7%;
   }
   
   .custom-button:hover {

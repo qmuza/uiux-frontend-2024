@@ -128,6 +128,8 @@ h1 {
 
 #submit-btn:hover {
   background: linear-gradient(to right, #723fe079, #f94c4f65);
+  scale: 105%;
+  transition: width 0.3s height 0.3s;
 }
 
 #result {

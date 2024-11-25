@@ -6,8 +6,12 @@
   font-family: 'Anek Kannada', sans-serif;
 }
 
-body {
-  background: url('Group\ 16.svg') no-repeat top center,url('Group\ 32.svg')no-repeat top left ,url('Group\ 33.svg')no-repeat bottom right,linear-gradient(180deg, #FFE1FF 0%, #FF9696 100%);
+.outer-wrapper {
+  background: url('Group\ 32.svg')no-repeat top left ,url('Group\ 33.svg')no-repeat bottom right,linear-gradient(180deg, #FFE1FF 0%, #FF9696 100%);
+}
+
+.result-wrapper {
+  background: url('Group\ 16.svg') no-repeat 40vw 0%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -39,6 +43,9 @@ z-index: -1; /* Menempatkan di belakang konten utama */
 
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 800px;
   /* background-color: white; */
@@ -107,7 +114,6 @@ z-index: -1; /* Menempatkan di belakang konten utama */
   width: 100%; /* Atur lebar tabel agar responsif */
   max-width: 600px; /* Batasi lebar maksimal tabel */
   text-align: center;
-  margin-left: 0;
   
 }
 

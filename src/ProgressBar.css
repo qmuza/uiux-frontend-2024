@@ -10,7 +10,7 @@
 
 .inner-progress-bg {
     display: flex;
-    background-image: linear-gradient(to right, #EECBE5 , #FFF7D1);
+    background-image: linear-gradient(to right, #ffCBF5 , #FFF7D1);
     width: calc(100% - 10px);
     height: 50px;
     border-radius: 25px;
@@ -25,7 +25,8 @@
     border-radius: 25px;
     justify-content: center;
     align-items: center;
-    transition: width 1s;
+    transition: width 0.5s;
+    box-shadow: inset 0 0 10px rgb(255, 255, 255);
 }
 
 .progress-text {

@@ -4,7 +4,7 @@
       "question": "Selama dua minggu terakhir, seberapa sering Anda mengalami sedikit minat atau kesenangan dalam melakukan berbagai hal?",
       "options": [
           { "text": "Hampir setiap hari", "value": 3 },
-          { "text": "Lebih dari separuh hari", "value": 2},
+          { "text": "Lebih dari ½ hari", "value": 2},
           { "text": "Beberapa hari", "value": 1 },
           { "text": "Tidak sama sekali", "value": 0 }
       ]
@@ -14,7 +14,7 @@
       "question": "Merasa tertekan, murung, atau putus asa?",
       "options": [
           { "text": "Hampir setiap hari", "value": 3 },
-          { "text": "Lebih dari separuh hari", "value": 2},
+          { "text": "Lebih dari ½ hari", "value": 2},
           { "text": "Beberapa hari", "value": 1 },
           { "text": "Tidak sama sekali", "value": 0 }
       ]
@@ -24,7 +24,7 @@
       "question": "Mengalami kesulitan untuk tidur atau tetap tidur, atau tidur terlalu banyak?",
       "options": [
           { "text": "Hampir setiap hari", "value": 3 },
-          { "text": "Lebih dari separuh hari", "value": 2},
+          { "text": "Lebih dari ½ hari", "value": 2},
           { "text": "Beberapa hari", "value": 1 },
           { "text": "Tidak sama sekali", "value": 0 }
       ]
@@ -34,7 +34,7 @@
       "question": "Merasa lelah atau kurang energi?",
       "options": [
           { "text": "Hampir setiap hari", "value": 3 },
-          { "text": "Lebih dari separuh hari", "value": 2},
+          { "text": "Lebih dari ½ hari", "value": 2},
           { "text": "Beberapa hari", "value": 1 },
           { "text": "Tidak sama sekali", "value": 0 }
       ]
@@ -44,7 +44,7 @@
       "question": "Nafsu makan yang buruk atau makan terlalu berlebihan?",
       "options": [
           { "text": "Hampir setiap hari", "value": 3 },
-          { "text": "Lebih dari separuh hari", "value": 2},
+          { "text": "Lebih dari ½ hari", "value": 2},
           { "text": "Beberapa hari", "value": 1 },
           { "text": "Tidak sama sekali", "value": 0 }
       ]
@@ -54,7 +54,7 @@
       "question": "Merasa tidak enak terhadap diri sendiri - atau merasa bahwa Anda adalah orang yang gagal atau mengecewakan diri sendiri atau keluarga Anda?",
       "options": [
           { "text": "Hampir setiap hari", "value": 3 },
-          { "text": "Lebih dari separuh hari", "value": 2},
+          { "text": "Lebih dari ½ hari", "value": 2},
           { "text": "Beberapa hari", "value": 1 },
           { "text": "Tidak sama sekali", "value": 0 }
       ]
@@ -64,7 +64,7 @@
       "question": "Kesulitan berkonsentrasi pada hal-hal, seperti membaca koran atau menonton TV?",
       "options": [
           { "text": "Hampir setiap hari", "value": 3 },
-          { "text": "Lebih dari separuh hari", "value": 2},
+          { "text": "Lebih dari ½ hari", "value": 2},
           { "text": "Beberapa hari", "value": 1 },
           { "text": "Tidak sama sekali", "value": 0 }
       ]
@@ -74,7 +74,7 @@
       "question": "Bergerak atau berbicara sangat lambat sehingga orang lain mungkin memperhatikan, atau sebaliknya - sangat gelisah atau resah?",
       "options": [
           { "text": "Hampir setiap hari", "value": 3 },
-          { "text": "Lebih dari separuh hari", "value": 2},
+          { "text": "Lebih dari ½ hari", "value": 2},
           { "text": "Beberapa hari", "value": 1 },
           { "text": "Tidak sama sekali", "value": 0 }
       ]
@@ -84,7 +84,7 @@
       "question": "Pikiran bahwa Anda lebih baik mati atau melukai diri sendiri dengan cara tertentu?",
       "options": [
           { "text": "Hampir setiap hari", "value": 3 },
-          { "text": "Lebih dari separuh hari", "value": 2},
+          { "text": "Lebih dari ½ hari", "value": 2},
           { "text": "Beberapa hari", "value": 1 },
           { "text": "Tidak sama sekali", "value": 0 }
       ]
