@@ -78,3 +78,31 @@ body, html {
     width: 100%; /* Pastikan elemen mencakup seluruh lebar viewport */
     height: 100%; /* Pastikan elemen mencakup seluruh tinggi viewport */
 }
+
+.custom-button {
+    position : absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 40px; /* Memperbesar padding untuk proporsi */
+    font-size: 45px; /* Sedikit lebih besar */
+    font-weight: bold;
+    color: #3b2b5b; /* Warna teks */
+    background: linear-gradient(145deg, #f3bccb, #f9d1d8); /* Warna gradien latar */
+    border: none;
+    border-radius: 50px; /* Membuat sudut lebih membulat */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.4); /* Shadow lebih halus */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: -5%;
+  }
+  
+  .custom-button:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(255, 255, 255, 0.5); /* Shadow saat hover */
+    transform: scale(1.25); /* Efek zoom saat hover */
+  }
+  
+  
+  
+  
