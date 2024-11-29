@@ -5,7 +5,7 @@
       "options": [
           { "text": "Tidak sama sekali", "value": 0 },
           { "text": "Beberapa hari", "value": 1 },
-          { "text": "Lebih dari ½ hari", "value": 2},
+          { "text": "Lebih dari 7 hari", "value": 2},
           { "text": "Hampir setiap hari", "value": 3 }
       ]
   },
@@ -15,7 +15,7 @@
       "options": [
         { "text": "Tidak sama sekali", "value": 0 },
         { "text": "Beberapa hari", "value": 1 },
-        { "text": "Lebih dari ½ hari", "value": 2},
+        { "text": "Lebih dari 7 hari", "value": 2},
         { "text": "Hampir setiap hari", "value": 3 }
     ]
   },
@@ -25,7 +25,7 @@
       "options": [
         { "text": "Tidak sama sekali", "value": 0 },
         { "text": "Beberapa hari", "value": 1 },
-        { "text": "Lebih dari ½ hari", "value": 2},
+        { "text": "Lebih dari 7 hari", "value": 2},
         { "text": "Hampir setiap hari", "value": 3 }
     ]
   },
@@ -35,7 +35,7 @@
       "options": [
         { "text": "Tidak sama sekali", "value": 0 },
         { "text": "Beberapa hari", "value": 1 },
-        { "text": "Lebih dari ½ hari", "value": 2},
+        { "text": "Lebih dari 7 hari", "value": 2},
         { "text": "Hampir setiap hari", "value": 3 }
     ]
   },
@@ -45,7 +45,7 @@
       "options": [
         { "text": "Tidak sama sekali", "value": 0 },
         { "text": "Beberapa hari", "value": 1 },
-        { "text": "Lebih dari ½ hari", "value": 2},
+        { "text": "Lebih dari 7 hari", "value": 2},
         { "text": "Hampir setiap hari", "value": 3 }
     ]
   },
@@ -55,7 +55,7 @@
       "options": [
         { "text": "Tidak sama sekali", "value": 0 },
         { "text": "Beberapa hari", "value": 1 },
-        { "text": "Lebih dari ½ hari", "value": 2},
+        { "text": "Lebih dari 7 hari", "value": 2},
         { "text": "Hampir setiap hari", "value": 3 }
     ]
   },
@@ -65,7 +65,7 @@
       "options": [
         { "text": "Tidak sama sekali", "value": 0 },
         { "text": "Beberapa hari", "value": 1 },
-        { "text": "Lebih dari ½ hari", "value": 2},
+        { "text": "Lebih dari 7 hari", "value": 2},
         { "text": "Hampir setiap hari", "value": 3 }
     ]
   },
@@ -75,7 +75,7 @@
       "options": [
         { "text": "Tidak sama sekali", "value": 0 },
         { "text": "Beberapa hari", "value": 1 },
-        { "text": "Lebih dari ½ hari", "value": 2},
+        { "text": "Lebih dari 7 hari", "value": 2},
         { "text": "Hampir setiap hari", "value": 3 }
     ]
   },
@@ -85,7 +85,7 @@
       "options": [
         { "text": "Tidak sama sekali", "value": 0 },
         { "text": "Beberapa hari", "value": 1 },
-        { "text": "Lebih dari ½ hari", "value": 2},
+        { "text": "Lebih dari 7 hari", "value": 2},
         { "text": "Hampir setiap hari", "value": 3 }
     ]
   }

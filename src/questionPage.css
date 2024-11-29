@@ -72,20 +72,20 @@ h1 {
 }
 
 .circle.a {
-  border-color: #433878;
+  border-color: #524397;
   width: 40px;
   height: 40px;
 }
 
 .circle.b {
-  border-color: #7E60BF;
+  border-color: #765eaa;
   width: 30px;
   height: 30px;
   margin-top: 10px;
 }
 
 .circle.c {
-  border-color: #E4B1F0;
+  border-color: #c39ee3;
   width: 30px;
   height: 30px;
   margin-top: 10px;
@@ -98,15 +98,15 @@ h1 {
 }
 
 .option input[type="radio"]:checked + .circle.a {
-  background-color: #433878; /* Warna sesuai border */
+  background-color: #524397; /* Warna sesuai border */
 }
 
 .option input[type="radio"]:checked + .circle.b {
-  background-color: #7E60BF; /* Warna sesuai border */
+  background-color: #765eaa; /* Warna sesuai border */
 }
 
 .option input[type="radio"]:checked + .circle.c {
-  background-color: #E4B1F0; /* Warna sesuai border */
+  background-color: #c39ee3; /* Warna sesuai border */
 }
 
 .option input[type="radio"]:checked + .circle.d {

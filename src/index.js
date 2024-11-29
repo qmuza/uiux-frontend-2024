@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './landingpage';
 import InstructionPage from './instructionPage';
-import MentalHealthSurvey from './MentalHealthSurvey';
+import QuestionPage from './questionPage';
 import ResultPage from './result_page';
 import './index.css';
 
@@ -14,7 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<LandingPage />} />
           <Route path="/instructions" element={<InstructionPage />} />
-          <Route path="/survey" element={<MentalHealthSurvey />} />
+          <Route path="/survey" element={<QuestionPage />} />
           <Route path="/result" element={<ResultPage />} />
       </Routes>
     </Router>

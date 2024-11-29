@@ -2,7 +2,7 @@
     display: flex;
     width: 90%;
     background-color: #FFE1FF;
-    height: 60px;
+    height: 40px;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
     display: flex;
     background-image: linear-gradient(to right, #ffCBF5 , #FFF7D1);
     width: calc(100% - 10px);
-    height: 50px;
+    height: 30px;
     border-radius: 25px;
     justify-content: start;
 
@@ -21,7 +21,7 @@
 .progress-bar-real {
     display: flex;
     background-color: #A483CC;
-    height: 50px;
+    height: 30px;
     border-radius: 25px;
     justify-content: center;
     align-items: center;
