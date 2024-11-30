@@ -114,12 +114,26 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  color: rgba(85, 60, 154, 0.8);
+  color: #553c9a;
   font-size: 1.1rem;
 }
 
-.scroll-icon {
+.start-button {
+  background-color: #9f7aea;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* text-transform: uppercase; */
   animation: bounce 1s infinite;
+}
+
+.start-button:hover {
+  background-color: #7e3af2;
 }
 
 @keyframes bounce {
@@ -127,7 +141,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(4px);
+    transform: translateY(2px);
   }
 }
 
