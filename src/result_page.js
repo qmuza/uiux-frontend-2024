@@ -1,33 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import './result_page.css';
+
 
 function ResultPage() {
   const location = useLocation();
   const { score } = location.state || { score: 0 }; 
 
+  
+  const [description, setDescription] = useState(''); // State untuk deskripsi
+
   useEffect(() => {
-    highlightCategory(score);
+    updateDescription(score);
   }, [score]);
 
-  const highlightCategory = (score) => {
-    const rows = document.querySelectorAll('.row');
-    rows.forEach(row => {
-      row.classList.add('inactive');
-      row.classList.remove('active');
-    });
-
+  const updateDescription = (score) => {
     if (score >= 0 && score <= 4) {
-      document.getElementById('score1').classList.add('active');
+      setDescription('No depression');
     } else if (score >= 5 && score <= 9) {
-      document.getElementById('score2').classList.add('active');
+      setDescription('Mild depression');
     } else if (score >= 10 && score <= 14) {
-      document.getElementById('score3').classList.add('active');
+      setDescription('Moderate depression');
     } else if (score >= 15 && score <= 19) {
-      document.getElementById('score4').classList.add('active');
+      setDescription('Moderately severe depression');
     } else if (score >= 20 && score <= 27) {
-      document.getElementById('score5').classList.add('active');
+      setDescription('Severe depression');
+    } else {
+      setDescription('Invalid score'); // Untuk skor di luar rentang
     }
   };
 
@@ -41,9 +41,22 @@ function ResultPage() {
           <div className="score-box">
             <p>Skor anda:</p>
             <h2 id="scoreValue">{score}</h2>
+            <p>{description}</p>{/* tempat untuk mendeskripsikan skor */}
           </div>
 
-          <div className="table">
+          <div className='contact-center'>
+            <p>Jika anda membutuhkan bantuan silahkan menghubungi layanan di bawah ini:</p>
+            <br />
+            <a 
+            href="https://ukp.psikologi.ugm.ac.id/">
+            <h4>Unit Konsultasi Psikologi UGM </h4>
+            </a>
+            <a href="https://gmc.ugm.ac.id/">
+            <h4>Gadjah Mada Medical Center</h4>
+            </a>
+          </div>
+
+          {/* <div className="table">
             <div className="row" id="score1">
               <span>0-4:</span>
               <span>No depression</span>
@@ -68,7 +81,7 @@ function ResultPage() {
               <span>20-27:</span>
               <span>Severe depression</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

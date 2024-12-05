@@ -27,9 +27,9 @@ const InstructionPage = () => {
             </div>
 
             <div className="scroll-prompt">
-              <p>Klik tombol di bawah untuk memulai</p>
+              <p>Klik tombol di bawah untuk melanjutkan</p>
               <button className="start-button" onClick={() => navigate('/survey')}>
-                <p>Mulai</p>
+                <p>Lanjut</p>
               </button>
             </div>
           </div>

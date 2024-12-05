@@ -51,7 +51,7 @@
   },
   {
       "id": 6,
-      "question": "Merasa tidak enak terhadap diri sendiri - atau merasa bahwa Anda adalah orang yang gagal atau mengecewakan diri sendiri atau keluarga Anda?",
+      "question": "Merasa tidak enak terhadap diri sendiri atau merasa bahwa Anda adalah orang yang gagal atau mengecewakan diri sendiri atau keluarga Anda?",
       "options": [
         { "text": "Tidak sama sekali", "value": 0 },
         { "text": "Beberapa hari", "value": 1 },
