@@ -1,7 +1,7 @@
 [
   {
       "id": 1,
-      "question": "Selama dua minggu terakhir, seberapa sering Anda mengalami sedikit minat atau kesenangan dalam melakukan berbagai hal?",
+      "question": "Seberapa sering Anda mengalami sedikit minat atau kesenangan dalam melakukan berbagai hal?",
       "options": [
           { "text": "Tidak sama sekali", "value": 0 },
           { "text": "Beberapa hari", "value": 1 },

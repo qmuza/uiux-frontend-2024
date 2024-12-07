@@ -5,15 +5,14 @@ body{
   background-size: 23%, 40%, cover;
 }
 
-.survey-container {
+.survey-form {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #433878;
   max-width: 650px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   margin: auto;
   padding: 25px;
-  border-radius: 20px;
-  box-shadow: inset 0 0 10px rgb(255, 255, 255);
-  backdrop-filter: blur(5px);
 }
 
 h1 {
@@ -79,16 +78,16 @@ h1 {
 
 .circle.b {
   border-color: #765eaa;
-  width: 30px;
-  height: 30px;
-  margin-top: 10px;
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
 }
 
 .circle.c {
   border-color: #c39ee3;
-  width: 30px;
-  height: 30px;
-  margin-top: 10px;
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
 }
 
 .circle.d {
@@ -98,19 +97,19 @@ h1 {
 }
 
 .option input[type="radio"]:checked + .circle.a {
-  background-color: #524397; /* Warna sesuai border */
+  background-color: #524397; 
 }
 
 .option input[type="radio"]:checked + .circle.b {
-  background-color: #765eaa; /* Warna sesuai border */
+  background-color: #765eaa; 
 }
 
 .option input[type="radio"]:checked + .circle.c {
-  background-color: #c39ee3; /* Warna sesuai border */
+  background-color: #c39ee3; 
 }
 
 .option input[type="radio"]:checked + .circle.d {
-  background-color: #fcf3f3; /* Warna sesuai border */
+  background-color: #fcf3f3; 
 }
 
 #submit-btn {
@@ -130,10 +129,4 @@ h1 {
   background: linear-gradient(to right, #723fe079, #f94c4f65);
   scale: 105%;
   transition: width 0.3s height 0.3s;
-}
-
-#result {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 20px;
 }

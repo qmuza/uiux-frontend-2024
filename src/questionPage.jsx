@@ -13,7 +13,7 @@ const QuestionPage = () => {
   const handleOptionChange = (questionId, value, index) => {
     setScores((prev) => ({ ...prev, [questionId]: value }));
 
-    // Scroll to the next question
+    // scroll ke next question
     if (index < questions.length - 1) {
       questionRefs.current[index + 1]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
@@ -29,7 +29,7 @@ const QuestionPage = () => {
   };
 
   return (
-    <div className="survey-container">
+    <div className="survey-form">
       <ProgressBar prog_percent={Math.round(100 * Object.keys(scores).length / 9)} />
       <h1>Mental Health Survey</h1>
       {questions.map((question, index) => (
