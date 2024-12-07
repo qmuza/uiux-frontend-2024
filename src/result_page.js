@@ -1,18 +1,26 @@
-import React, {useState} from 'react';
-import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom'; // Tambahkan useNavigate
 import './result_page.css';
-
 
 function ResultPage() {
   const location = useLocation();
-  const { score } = location.state || { score: 0 }; 
+  const navigate = useNavigate(); // Untuk navigasi ke landing page
+  const { score } = location.state || { score: 0 };
 
-  
-  const [description, setDescription] = useState(''); // State untuk deskripsi
+  const [description, setDescription] = useState('');
+  const [motivation, setMotivation] = useState('');
+
+  const motivations = [
+    'You are stronger than you think.',
+    'Every storm runs out of rain.',
+    'Focus on the good, even in tough times.',
+    'Healing takes time, and that’s okay.',
+    'Believe in yourself and your ability to grow.',
+  ];
 
   useEffect(() => {
     updateDescription(score);
+    setMotivation(motivations[Math.floor(Math.random() * motivations.length)]);
   }, [score]);
 
   const updateDescription = (score) => {
@@ -27,61 +35,43 @@ function ResultPage() {
     } else if (score >= 20 && score <= 27) {
       setDescription('Severe depression');
     } else {
-      setDescription('Invalid score'); // Untuk skor di luar rentang
+      setDescription('Invalid score');
     }
   };
 
+  const handleBack = () => {
+    navigate('/'); // Navigasi ke halaman landing
+  };
+
   return (
-    <div className='outer-wrapper'>
-      <div className='result-wrapper'>
+    <div className="outer-wrapper">
+      <div className="result-wrapper">
         <div className="rectangle"></div>
 
         <div className="container">
-
           <div className="score-box">
             <p>Skor anda:</p>
             <h2 id="scoreValue">{score}</h2>
-            <p>{description}</p>{/* tempat untuk mendeskripsikan skor */}
+            <p>{description}</p>
           </div>
 
-          <div className='contact-center'>
-            <p>Jika anda membutuhkan bantuan silahkan menghubungi layanan di bawah ini:</p>
-            <br />
-            <a 
-            href="https://ukp.psikologi.ugm.ac.id/">
-            <h4>Unit Konsultasi Psikologi UGM </h4>
+          {/* Menambahkan paragraf di atas link */}
+          <p>Jika anda membutuhkan bantuan silahkan menghubungi layanan di bawah ini:</p>
+
+          <div className="contact-center">
+            <a href="https://ukp.psikologi.ugm.ac.id/">
+              Unit Konsultasi Psikologi UGM
             </a>
             <a href="https://gmc.ugm.ac.id/">
-            <h4>Gadjah Mada Medical Center</h4>
+              Gadjah Mada Medical Center
             </a>
           </div>
 
-          {/* <div className="table">
-            <div className="row" id="score1">
-              <span>0-4:</span>
-              <span>No depression</span>
-            </div>
+          <p className="motivation">{motivation}</p>
 
-            <div className="row" id="score2">
-              <span>5-9:</span>
-              <span>Mild depression</span>
-            </div>
-
-            <div className="row" id="score3">
-              <span>10-14:</span>
-              <span>Moderate depression</span>
-            </div>
-
-            <div className="row" id="score4">
-              <span>15-19:</span>
-              <span>Moderately severe depression</span>
-            </div>
-
-            <div className="row" id="score5">
-              <span>20-27:</span>
-              <span>Severe depression</span>
-            </div>
-          </div> */}
+          <button className="back-button" onClick={handleBack}>
+            Kembali ke Landing Page
+          </button>
         </div>
       </div>
     </div>
