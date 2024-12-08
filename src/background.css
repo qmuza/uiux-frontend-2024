@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(to bottom, #E0D2FF, #E69495, #F69090);
+    background-image: linear-gradient(to top right,#7E60BF, #FF9696);
     position: relative;
     overflow: hidden; 
 }
@@ -13,8 +13,8 @@
 
 .wave-bg-top-right{
     position: absolute;
-    top: 0; /* Posisikan ke atas */
-    right: 0; /* Posisikan ke kanan */
+    top: 0; 
+    right: 0; 
     margin: -10px;
     display: flex;
 }
@@ -22,87 +22,83 @@
 
 .wave-bg-bottom-left{
     position: absolute;
-    bottom: 0; /* Posisikan ke atas */
-    left: 0; /* Posisikan ke kanan */
+    top: 0; 
+    left: 0; 
     margin: -10px;
     display: flex;
 }
 
 
-.svg-left-top {
-    position: absolute;
-    top: 0; /* Posisikan ke atas */
-    left: 0; /* Posisikan ke kanan */
-    margin: -100px; /* Tambahkan margin agar tidak terlalu menempel */
-    display: flex;
-}
-
-.svg-bottom-right{
-    position: absolute;
-    bottom: 0; /* Posisikan ke bawah */
-    right: 0; /* Posisikan ke kanan */
-    z-index: 0;
-    margin: -130px; /* Tambahkan margin agar tidak terlalu menempel */
-    display: flex;
-}
-
-
-.svg-to-animate {
-    opacity: 0; /* Awalnya tidak terlihat */
-    transform: scale(0.8); /* Awalnya lebih kecil */
-    transition: all 0.5s ease-out; /* Transisi animasi */
-    display: flex;
-}
-
 .mulai-survey {
     position: absolute;
-    top: 20px; /* Jarak dari atas */
-    left: 50%; /* Posisikan di tengah horizontal */
-    transform: translateX(-50%); /* Koreksi agar benar-benar di tengah */
+    top: -90px; 
+    left: 50%; 
+    transform: translateX(-50%) scale(0.7); 
     margin: 0;
-  }
-  
+    transition: transform 0.3s ease; 
+}
 
-  .svg-to-animate.animate {
-    opacity: 1; /* Muncul */
-    transform: scale(1); /* Kembali ke ukuran normal */
-    transition: all 0.5s ease-out;
-    transition-delay: 0.3s; /* Tambahkan sedikit delay */
-  }
-  
+
 
 body, html {
-    margin: 0; /* Menghilangkan margin default */
-    padding: 0; /* Menghilangkan padding default */
-    overflow: hidden; /* Mencegah scroll */
-    width: 100%; /* Pastikan elemen mencakup seluruh lebar viewport */
-    height: 100%; /* Pastikan elemen mencakup seluruh tinggi viewport */
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.custom-button-container {
+    position: relative; 
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soundwave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; 
+    height: 100px; 
+    background: rgba(252, 229, 229, 0.802); 
+    border-radius: 50px; 
+    animation: pulse-oval 1.5s infinite ease-out; 
+    z-index: 0; 
+}
+
+@keyframes pulse-oval {
+    0% {
+        transform: translate(-50%, -50%) scale(1); 
+        opacity: 1; 
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2); 
+        opacity: 0; 
+    }
 }
 
 .custom-button {
-    position : absolute;
+    position: relative; 
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 20px 40px; /* Memperbesar padding untuk proporsi */
-    font-size: 45px; /* Sedikit lebih besar */
+    padding: 20px 40px;
+    font-size: 45px;
     font-weight: bold;
-    color: #3b2b5b; /* Warna teks */
-    background: linear-gradient(145deg, #f3bccb, #f9d1d8); /* Warna gradien latar */
+    color: #3b2b5b;
+    background: linear-gradient(145deg, #f3bccb, #f9d1d8);
     border: none;
-    border-radius: 50px; /* Membuat sudut lebih membulat */
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.4); /* Shadow lebih halus */
+    border-radius: 50px; 
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4), -3px -3px 6px rgba(255, 255, 255, 0.4);
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-left: -7%;
-  }
-  
-  .custom-button:hover {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(255, 255, 255, 0.5); /* Shadow saat hover */
+}
+
+.custom-button:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(255, 255, 255, 0.5);
     transform: scale(1.25); /* Efek zoom saat hover */
-  }
-  
-  
-  
-  
+}

@@ -3,7 +3,7 @@
 } */
 .instruction-container {
   min-height: 100vh;
-  background:  url(../public/Bulet_bulet.svg),linear-gradient(135deg, #9f7aea, #fbb6ce, #fc8181);
+  background:  url(../public/Bulet_bulet.svg),linear-gradient(135deg, #9f7aea, #553c9a, #fc8181);
   background-size: cover;
   padding: 1rem;
   display: flex;
