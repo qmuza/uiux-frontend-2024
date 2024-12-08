@@ -19,6 +19,7 @@
   padding: 0;
   flex-direction: column;
   margin: 0;
+  position: relative;
 }
 
 .bottom-svg {
@@ -56,6 +57,7 @@
   overflow: hidden;
   text-align: center;
   backdrop-filter: blur(10px);
+  position: relative;
 }
 
 /* Title Styling */
