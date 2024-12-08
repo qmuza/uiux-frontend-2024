@@ -1,13 +1,6 @@
 /* * {
   border: 2px solid #000;
 } */
-
-.down-button {
-  padding: 0;
-  border: none;
-  background: none;
-}
-
 .instruction-container {
   min-height: 100vh;
   background:  url(../public/Bulet_bulet.svg),linear-gradient(135deg, #9f7aea, #fbb6ce, #fc8181);
@@ -49,65 +42,25 @@
   font-weight: 600;
   color: #553c9a;
   text-align: center;
-  margin-bottom: 1.5rem; /* Increased margin */
+  margin-bottom: 1.5rem; 
 }
 
 .instruction-text {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* Increased gap */
+  gap: 1.5rem; 
   color: #553c9a;
 }
 
 .instruction-text p {
   text-align: center;
-  font-size: 1.1rem; /* Slightly larger text */
+  font-size: 1.1rem; 
 }
 
 .highlight {
   font-weight: 600;
 }
 
-.options-section {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  max-width: 36rem; /* Added max-width for better readability */
-  margin: 0 auto; /* Center the options section */
-}
-
-.options-title {
-  font-weight: 500;
-  text-align: left !important;
-  font-size: 1.1rem;
-}
-
-.options-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem; 
-  padding-left: 1rem;
-  list-style: none;
-}
-
-.options-list li {
-  display: flex;
-  align-items: center;
-  gap: 1rem; /* Increased gap */
-  font-size: 1.1rem; /* Slightly larger text */
-}
-
-.radio-circle {
-  width: 1.25rem; /* Slightly larger radio buttons */
-  height: 1.25rem;
-  border: 2px solid #9f7aea;
-  border-radius: 50%;
-}
-
-.reminder-text {
-  font-weight: 500;
-  font-size: 1.1rem;
-}
 
 .scroll-prompt {
   display: flex;
@@ -128,7 +81,6 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  /* text-transform: uppercase; */
   animation: bounce 1s infinite;
 }
 
