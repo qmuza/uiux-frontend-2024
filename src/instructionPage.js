@@ -15,7 +15,7 @@ const InstructionPage = () => {
               
               <div className="instruction-text">
                 <p>
-                  Dalam kuesioner ini, Anda akan menemui beberapa pertanyaan mengenai pengalaman Anda 
+                  Dalam kuesioner ini, Anda akan menemui <span className="highlight">sembilan (9)</span> pertanyaan mengenai pengalaman Anda 
                   selama <span className="highlight">2 minggu terakhir</span>.
                 </p>
               
