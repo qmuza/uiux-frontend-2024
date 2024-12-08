@@ -62,7 +62,7 @@ function ResultPage() {
             <a href="https://ukp.psikologi.ugm.ac.id/">
               Unit Konsultasi Psikologi UGM
             </a>
-            <a href="https://gmc.ugm.ac.id/">
+            <a href="https://gmc.ugm.ac.id/konseling-psikologi/">
               Gadjah Mada Medical Center
             </a>
           </div>
