@@ -153,6 +153,11 @@
 /* Media Queries */
 @media (max-width: 640px) {
   .result-wrapper {
+    padding: 20px;
+    min-height: auto;
     background: url('Group\ 16.svg') no-repeat 1000% 0%;
+  }
+  .container {
+    padding: 20px;
   }
 }
