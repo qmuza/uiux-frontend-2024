@@ -21,18 +21,6 @@
   margin: 0;
   position: relative;
 }
-
-.bottom-svg {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: 0;
-  left: 0;
-  background: url('Bulet\ bulet.svg') no-repeat center bottom;
-  background-size: cover;
-  z-index: -2;
-}
-
 .rectangle {
   position: absolute;
   width: 100%;
