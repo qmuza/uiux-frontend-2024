@@ -1,3 +1,6 @@
+* {
+  font-family: 'Outfit';
+}
 body{
   background: url('./assets/Vector 4.svg') no-repeat top left,
   url('./assets/Vector 7.svg') no-repeat bottom right,
